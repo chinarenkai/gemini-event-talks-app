@@ -1,0 +1,44 @@
+[
+  {
+    "title": "The Future of Edge Computing",
+    "speakers": ["Alice Chen"],
+    "category": ["Infrastructure", "Edge"],
+    "duration": 60,
+    "description": "Explore how edge computing is transforming data processing by bringing computation closer to the source."
+  },
+  {
+    "title": "Mastering React Server Components",
+    "speakers": ["Bob Smith"],
+    "category": ["Frontend", "React"],
+    "duration": 60,
+    "description": "A deep dive into RSCs, how they work, and best practices for integrating them into your Next.js applications."
+  },
+  {
+    "title": "Scaling AI Models with Node.js",
+    "speakers": ["Dr. Sarah Vogt"],
+    "category": ["AI", "Node.js"],
+    "duration": 60,
+    "description": "Learn techniques for managing heavy AI workloads and inference tasks using Node.js architecture."
+  },
+  {
+    "title": "Cybersecurity in the Age of LLMs",
+    "speakers": ["James Hunt"],
+    "category": ["Security", "AI"],
+    "duration": 60,
+    "description": "Understanding new attack vectors introduced by Large Language Models and how to secure your applications."
+  },
+  {
+    "title": "Building Type-Safe APIs with Zod",
+    "speakers": ["Maria Garcia"],
+    "category": ["Backend", "TypeScript"],
+    "duration": 60,
+    "description": "End-to-end type safety tutorial using Zod for validation and TypeScript for static analysis."
+  },
+  {
+    "title": "The Rise of WebAssembly",
+    "speakers": ["Ken Thompson", "Linus T."],
+    "category": ["Performance", "WASM"],
+    "duration": 60,
+    "description": "Why WASM is the next big thing for web performance and how to compile Rust to run in the browser."
+  }
+]
