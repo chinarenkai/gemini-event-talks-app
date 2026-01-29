@@ -1,8 +1,30 @@
 document.addEventListener('DOMContentLoaded', () => {
     const scheduleContainer = document.getElementById('schedule');
     const searchInput = document.getElementById('searchInput');
+    const themeToggle = document.getElementById('themeToggle');
     
     let allScheduleItems = [];
+
+    // --- Theme Logic ---
+    // Check localStorage or system preference
+    const savedTheme = localStorage.getItem('theme');
+    const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+
+    if (savedTheme === 'light' || (!savedTheme && prefersLight)) {
+        document.body.classList.add('light-mode');
+        themeToggle.textContent = '🌙'; // Icon for switching TO dark
+    } else {
+        themeToggle.textContent = '☀️'; // Icon for switching TO light
+    }
+
+    themeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('light-mode');
+        const isLight = document.body.classList.contains('light-mode');
+        
+        themeToggle.textContent = isLight ? '🌙' : '☀️';
+        localStorage.setItem('theme', isLight ? 'light' : 'dark');
+    });
+    // -------------------
 
     // Configuration
     const START_TIME = "10:00"; // 24h format
